@@ -2,4 +2,4 @@
 Roblox Hub By DarksGitHub
 
 Universal Script
-`bigballs`
+`loadstring(game:HttpGet("https://raw.githubusercontent.com/DarksGitHub/DarkkHub/main/Universal.lua"))()`
