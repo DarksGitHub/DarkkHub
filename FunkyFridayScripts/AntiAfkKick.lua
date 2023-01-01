@@ -1,0 +1,6 @@
+local VirtualPLayer = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   VirtualPlayer:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   VirtualPLayer:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
