@@ -1,0 +1,15 @@
+-- UI Toggle (RightShift)
+ui.Enabled = true
+local UserInputService = game:GetService(“UserInputService”)
+
+UserInputService.InputBegan:Connect(function(input,gameProcessed)
+    if gameProccessed then -- Prevents this from running when typing in chat
+        if input.KeyCode == Enum.KeyCode.RightShift then
+            if ui.Enabled = true then 
+                ui.Enabled = false -- If The Ui Is Showing, Hide it
+            elseif ui.Enabled = false
+                ui.Enabled = true -- If The Ui Is Already Hidden, Show it
+            end
+        end)
+    end
+end)
